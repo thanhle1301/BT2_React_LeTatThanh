@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.page_home {
+  background-image: url(../public/BTglasses/glassesImage/background.jpg);
+  background-size: cover;
+  height: 120vh;
+  background-position: bottom;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.mau_anh {
+  display: flex;
+  justify-content: center;
+}
+.mau_anh img {
+  height: 100%;
+  width: 100%;
+}
+.mau_anh .bg_face {
+  width: 300px;
+  height: 400px;
+  margin: 70px 100px;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+}
+
+.bg_face {
+  position: relative;
+}
+.mau_anh .text_mau {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background-color: rgba(255, 165, 0, 0.3);
+  text-align: left;
+}
+.text_mau h3 {
+  color: violet;
+  padding: 5px;
+}
+.text_mau p {
+  color: white;
+  padding: 0 5px;
+}
+.glass_model_mau,
+.thay_glass {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 50%;
+  height: 15%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+.model_glass {
+  width: 70%;
+  margin: 0 auto;
+  height: 30%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.model_glass img {
+  height: 50px;
+  margin: 20px 20px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 992px) {
+  .mau_anh .bg_face {
+    margin: 20px 50px;
+  }
+  .text_mau h3 {
+    font-size: 20px;
+  }
+  .text_mau p {
+    font-size: 12px;
+  }
+  .model_glass img {
+    height: 40px;
+    margin: 10px;
+  }
+}
